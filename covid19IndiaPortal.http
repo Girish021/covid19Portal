@@ -1,0 +1,65 @@
+POST http://localhost:3001/login/ 
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}  
+
+###
+GET http://localhost:3001/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDMxODUyfQ.gDyUZSfDODocgruMvTZnQHNQVzQS8-ivvpBL1UgywtY
+
+
+
+
+###
+GET http://localhost:3001/states/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDMxODUyfQ.gDyUZSfDODocgruMvTZnQHNQVzQS8-ivvpBL1UgywtY
+
+
+###
+POST http://localhost:3001/districts/ 
+content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDMxODUyfQ.gDyUZSfDODocgruMvTZnQHNQVzQS8-ivvpBL1UgywtY
+
+{
+  "districtName": "Bangladesh",
+  "stateId": 5,
+  "cases": 2555,
+  "cured": 2012,
+  "active": 301,
+  "deaths": 1
+}
+
+###
+GET http://localhost:3001/districts/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDMxODUyfQ.gDyUZSfDODocgruMvTZnQHNQVzQS8-ivvpBL1UgywtY
+
+
+###
+DELETE http://localhost:3001/districts/771/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDMxODUyfQ.gDyUZSfDODocgruMvTZnQHNQVzQS8-ivvpBL1UgywtY
+
+
+### 
+PUT http://localhost:3001/districts/765/
+content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDMxODUyfQ.gDyUZSfDODocgruMvTZnQHNQVzQS8-ivvpBL1UgywtY
+
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+
+###
+GET http://localhost:3001/states/35/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDMxODUyfQ.gDyUZSfDODocgruMvTZnQHNQVzQS8-ivvpBL1UgywtY
+
+
